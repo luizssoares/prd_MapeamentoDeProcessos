@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_201" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>volume</string>
+   <array class="java.lang.String" length="4">
+    <void index="0">
+     <string>Default</string>
+    </void>
+    <void index="1">
+     <string>Contratos</string>
+    </void>
+    <void index="2">
+     <string>LGPD</string>
+    </void>
+    <void index="3">
+     <string>GDoc</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>expediente</string>
+   <array class="java.lang.String" length="3">
+    <void index="0">
+     <string>Default</string>
+    </void>
+    <void index="1">
+     <string>Estagiários - 09:00 as 16:00</string>
+    </void>
+    <void index="2">
+     <string>Horário Reduzido - TEA</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>camposFormulario, documentoId = 551600</string>
+   <array class="java.lang.String" length="40">
+    <void index="0">
+     <string>autonomia</string>
+    </void>
+    <void index="1">
+     <string>beneficio</string>
+    </void>
+    <void index="2">
+     <string>cmb_GerenteSolicitante</string>
+    </void>
+    <void index="3">
+     <string>cmb_NomeSolicitante</string>
+    </void>
+    <void index="4">
+     <string>cmb_UnidadeSolicitante</string>
+    </void>
+    <void index="5">
+     <string>dadosSensiveis</string>
+    </void>
+    <void index="6">
+     <string>dataAgendamento</string>
+    </void>
+    <void index="7">
+     <string>dataFinalizacaoFluxo</string>
+    </void>
+    <void index="8">
+     <string>dataSolic</string>
+    </void>
+    <void index="9">
+     <string>dimensao</string>
+    </void>
+    <void index="10">
+     <string>donoProcesso</string>
+    </void>
+    <void index="11">
+     <string>escolhaField</string>
+    </void>
+    <void index="12">
+     <string>escolhaPainel</string>
+    </void>
+    <void index="13">
+     <string>hd_nomeSolicitante</string>
+    </void>
+    <void index="14">
+     <string>hd_numSuperior</string>
+    </void>
+    <void index="15">
+     <string>hdn_diretoria</string>
+    </void>
+    <void index="16">
+     <string>hdn_lastState</string>
+    </void>
+    <void index="17">
+     <string>hdn_State</string>
+    </void>
+    <void index="18">
+     <string>impacto</string>
+    </void>
+    <void index="19">
+     <string>indicadoresDoProcesso</string>
+    </void>
+    <void index="20">
+     <string>justificativa</string>
+    </void>
+    <void index="21">
+     <string>macroSelect</string>
+    </void>
+    <void index="22">
+     <string>nameDeliberacao</string>
+    </void>
+    <void index="23">
+     <string>nameIn</string>
+    </void>
+    <void index="24">
+     <string>nomenclatura</string>
+    </void>
+    <void index="25">
+     <string>objDoProcesso</string>
+    </void>
+    <void index="26">
+     <string>objetivoEstrategico</string>
+    </void>
+    <void index="27">
+     <string>pesoObj</string>
+    </void>
+    <void index="28">
+     <string>pontuacao</string>
+    </void>
+    <void index="29">
+     <string>principaisConsequencias</string>
+    </void>
+    <void index="30">
+     <string>problema</string>
+    </void>
+    <void index="31">
+     <string>processo</string>
+    </void>
+    <void index="32">
+     <string>rapidez</string>
+    </void>
+    <void index="33">
+     <string>rating</string>
+    </void>
+    <void index="34">
+     <string>requisitosLegais</string>
+    </void>
+    <void index="35">
+     <string>selectNtic</string>
+    </void>
+    <void index="36">
+     <string>sintomaDescricao</string>
+    </void>
+    <void index="37">
+     <string>textFinalizacaoProcesso</string>
+    </void>
+    <void index="38">
+     <string>textValidacaoProcesso</string>
+    </void>
+    <void index="39">
+     <string>usuario_coop</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>mecanismoPapel</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>admin</string>
+      </void>
+      <void property="roleId">
+       <string>admin</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Assessores</string>
+      </void>
+      <void property="roleId">
+       <string>Assessores</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>USN</string>
+      </void>
+      <void property="roleId">
+       <string>USN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Juridico Contratos</string>
+      </void>
+      <void property="roleId">
+       <string>JuridicoContratos</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>USN COMPRAS</string>
+      </void>
+      <void property="roleId">
+       <string>COMPRAS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>CPL - Comissão permanente licitação</string>
+      </void>
+      <void property="roleId">
+       <string>CPL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Diretor administrativo financeiro</string>
+      </void>
+      <void property="roleId">
+       <string>DiretorAdmFinanc</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Administrador do processo de contratos</string>
+      </void>
+      <void property="roleId">
+       <string>admin_contrato</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Gerentes do SEBRAE</string>
+      </void>
+      <void property="roleId">
+       <string>Gerentes</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Diretores do SEBRAE</string>
+      </void>
+      <void property="roleId">
+       <string>Diretores</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Contratos SGF</string>
+      </void>
+      <void property="roleId">
+       <string>USNContratosSGC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Equipe de Suporte - UTIC</string>
+      </void>
+      <void property="roleId">
+       <string>HelpDesk</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Grupo de Contratos SEbraetec</string>
+      </void>
+      <void property="roleId">
+       <string>UsnCtSebraetec</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Coordenação de Contratos Sebraetec</string>
+      </void>
+      <void property="roleId">
+       <string>UsnCtSbteCoordena</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF / Lançamento no RM</string>
+      </void>
+      <void property="roleId">
+       <string>UcofContratos</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Departamento Pessoal - Ressarcimentos </string>
+      </void>
+      <void property="roleId">
+       <string>DPRessarcimentos</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Terceirizados</string>
+      </void>
+      <void property="roleId">
+       <string>Terceiros</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Estagiários</string>
+      </void>
+      <void property="roleId">
+       <string>Estagio</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Autorizantes para Compras por Fundo Fixo</string>
+      </void>
+      <void property="roleId">
+       <string>ComprasFF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Operadores de Caixa - SEBRAE </string>
+      </void>
+      <void property="roleId">
+       <string>Caixa</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Contabilidade do SEBRAE</string>
+      </void>
+      <void property="roleId">
+       <string>Contabilidade</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>HelpDesk-Cadastro de Usuário na Rede</string>
+      </void>
+      <void property="roleId">
+       <string>hdeskcadusuario</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>USO - Logística de Transporte</string>
+      </void>
+      <void property="roleId">
+       <string>USNLogistica</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Cadastro de usuário-RM</string>
+      </void>
+      <void property="roleId">
+       <string>EquipeRM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Usuários de Suporte ao Fluig</string>
+      </void>
+      <void property="roleId">
+       <string>hdeskfluig</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Comprometer Recursos USN</string>
+      </void>
+      <void property="roleId">
+       <string>ComprometerRecursosUSN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Folha de Ponto - UGP</string>
+      </void>
+      <void property="roleId">
+       <string>FolhaPontoUGP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Usuários de Recepção de Metodologias</string>
+      </void>
+      <void property="roleId">
+       <string>USE_Metodologia</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>USA - Comitê de Avaliação de Metodologias</string>
+      </void>
+      <void property="roleId">
+       <string>USE_ComiteMetodologia</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Presidente do SEBRAE - CDE</string>
+      </void>
+      <void property="roleId">
+       <string>Presidencia</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Gestão da Qualidade</string>
+      </void>
+      <void property="roleId">
+       <string>Qualidade</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF - Agendamento</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFAnalistas</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Geração de Remessa</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFContabil</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF - Contas a Pagar</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFContasPagar</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>USO - Medição de Contratos</string>
+      </void>
+      <void property="roleId">
+       <string>USNMedicaoContratos</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Diretoria Financeira </string>
+      </void>
+      <void property="roleId">
+       <string>DIRAF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Diretoria da Superintendência </string>
+      </void>
+      <void property="roleId">
+       <string>DISUP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UGCE - Análise e Aprovação do Edital</string>
+      </void>
+      <void property="roleId">
+       <string>UMCEEdital</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Revisão de Material</string>
+      </void>
+      <void property="roleId">
+       <string>USN_CONFERENCIA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Logística - USO</string>
+      </void>
+      <void property="roleId">
+       <string>LogisticaUSN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF - Análise de Documentação</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFAnaliseDocumentacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Diretoria Técnica </string>
+      </void>
+      <void property="roleId">
+       <string>DITEC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação Serviços - Compras</string>
+      </void>
+      <void property="roleId">
+       <string>USNServCompras</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação Serviços - Patrimônio</string>
+      </void>
+      <void property="roleId">
+       <string>USNServPatrimonio</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação de Serviços - Manutenção</string>
+      </void>
+      <void property="roleId">
+       <string>USNServManutencao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação de Serviços - Limpeza e Segurança</string>
+      </void>
+      <void property="roleId">
+       <string>USNServLimpSeg</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação de Serviços - Logística e Distribuição</string>
+      </void>
+      <void property="roleId">
+       <string>USNServLogDist</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação de Serviços - Telefonia</string>
+      </void>
+      <void property="roleId">
+       <string>USNServTelefonia</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação de Serviços - Contratos</string>
+      </void>
+      <void property="roleId">
+       <string>USNServContratos</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação Serviços - Combustível</string>
+      </void>
+      <void property="roleId">
+       <string>USNServCombustivel</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação de Serviços - Almoxarifado</string>
+      </void>
+      <void property="roleId">
+       <string>USNServAlmox</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UAUD - Recebe e Analisa </string>
+      </void>
+      <void property="roleId">
+       <string>AnaliseUAUD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF - Adiantanto&amp;Ressarcimento - Efetua Pagamento</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFEAerEfetuaPag</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF - Adiantamento&amp;Ressarcimento - Baixa no Pagamento</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFAerBaixaPag</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Validação Comissão Interna</string>
+      </void>
+      <void property="roleId">
+       <string>UGPValidacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Análise - USO</string>
+      </void>
+      <void property="roleId">
+       <string>AnaliseUSO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Solicitação de Serviços - Manutenção Predial</string>
+      </void>
+      <void property="roleId">
+       <string>ServManutPredial</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UMCE - RECEBER E ANALISAR</string>
+      </void>
+      <void property="roleId">
+       <string>UMCE-RECEBER</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>AJUR - Analise da Demanda</string>
+      </void>
+      <void property="roleId">
+       <string>AJUR_ANALISE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF - Boleto</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFAnaliseBoleto</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF - Convênio</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFConvenio</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Analise Insercão de Fornecedor</string>
+      </void>
+      <void property="roleId">
+       <string>AnaliseInsercaoFornecedor</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCSEBRAE</string>
+      </void>
+      <void property="roleId">
+       <string>UCSEBRAE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UGP - APROVAÇÃO</string>
+      </void>
+      <void property="roleId">
+       <string>UGP_APROVA</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>USO - ORDEM DE SERVICO</string>
+      </void>
+      <void property="roleId">
+       <string>USN_ORDEM_SERVICO</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UMP-NOTEBOOK</string>
+      </void>
+      <void property="roleId">
+       <string>UMPNOTEBOOK</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Demanda Experts</string>
+      </void>
+      <void property="roleId">
+       <string>INT_Escolha_Credenciado</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UMP-NOTEBOOKGESTORES</string>
+      </void>
+      <void property="roleId">
+       <string>UMPNOTEBOOKGESTORES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Gestores Processo SGF</string>
+      </void>
+      <void property="roleId">
+       <string>GestorSGF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Gestores Processo SEBRAETEC</string>
+      </void>
+      <void property="roleId">
+       <string>GestorSEBRAETEC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF - PC Ressarcimento</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFPCRess</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UCOF - PC Adiantamento</string>
+      </void>
+      <void property="roleId">
+       <string>UCOFPCAd</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UMCE-PORTAL</string>
+      </void>
+      <void property="roleId">
+       <string>UMCE_PORTAL</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UGP-ANALISE</string>
+      </void>
+      <void property="roleId">
+       <string>UGPANALISE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UGP-RM</string>
+      </void>
+      <void property="roleId">
+       <string>UgpRM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>USIM-ANALISE_DADOS</string>
+      </void>
+      <void property="roleId">
+       <string>USE_ANALISE_DADOS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>CADASTRO DE USUARIOS NA UGE</string>
+      </void>
+      <void property="roleId">
+       <string>CAD_UGE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>CADASTRO DE USUARIOS NA REDE</string>
+      </void>
+      <void property="roleId">
+       <string>CAD_REDE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>CADASTRO DE USUARIO NO RM/SGOLITE</string>
+      </void>
+      <void property="roleId">
+       <string>CAD_RM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>CADASTRO DE USUARIO NA MYWEB/VERTSIGN</string>
+      </void>
+      <void property="roleId">
+       <string>CAD_MYWEB</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>USO_VEICULOS</string>
+      </void>
+      <void property="roleId">
+       <string>USO_VEICULOS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>SGF-ANALISE</string>
+      </void>
+      <void property="roleId">
+       <string>SGF_ANALISE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Ajuste Orçamentário da UGE</string>
+      </void>
+      <void property="roleId">
+       <string>Ajuste-UGE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>gestaoContratos_Sgf</string>
+      </void>
+      <void property="roleId">
+       <string>gestaoContratos_Sgf</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Controle_Contratos</string>
+      </void>
+      <void property="roleId">
+       <string>Controle_Contratos</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UGCE - Recebe e Analisa</string>
+      </void>
+      <void property="roleId">
+       <string>UGCE-Projetos</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>UGCE - Aprovação</string>
+      </void>
+      <void property="roleId">
+       <string>UGCE-Aprovar</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>ANALISE DEMANDA - NTIC</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISE_DEMANDA_NTIC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>Programa de Integridade Corporativa</string>
+      </void>
+      <void property="roleId">
+       <string>Integridade</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>mapeamentoDeProcesso</string>
+      </void>
+      <void property="roleId">
+       <string>mapeamentoDeProcesso</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>equipeDesenvolvimento</string>
+      </void>
+      <void property="roleId">
+       <string>equipeDesenvolvimento</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>mecanismo</string>
+   <array class="[Ljava.lang.Object;" length="11">
+    <void index="0">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Associação</string>
+      </void>
+      <void index="1">
+       <string>Associado</string>
+      </void>
+     </array>
+    </void>
+    <void index="1">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Baixa no Pagamento</string>
+      </void>
+      <void index="1">
+       <string>BaixaPagamento</string>
+      </void>
+     </array>
+    </void>
+    <void index="2">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Campo de Formulário</string>
+      </void>
+      <void index="1">
+       <string>Campo Formulário</string>
+      </void>
+     </array>
+    </void>
+    <void index="3">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Executor de Atividade</string>
+      </void>
+      <void index="1">
+       <string>Executor Atividade</string>
+      </void>
+     </array>
+    </void>
+    <void index="4">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupo</string>
+      </void>
+      <void index="1">
+       <string>Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="5">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupos do Colaborador</string>
+      </void>
+      <void index="1">
+       <string>Grupos Colaborador</string>
+      </void>
+     </array>
+    </void>
+    <void index="6">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Papel</string>
+      </void>
+      <void index="1">
+       <string>Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="7">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Grupo</string>
+      </void>
+      <void index="1">
+       <string>Pool Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="8">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Papel</string>
+      </void>
+      <void index="1">
+       <string>Pool Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="9">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>responsaveisPagamentoV2</string>
+      </void>
+      <void index="1">
+       <string>responsaveisPagamentoV2</string>
+      </void>
+     </array>
+    </void>
+    <void index="10">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Usuário</string>
+      </void>
+      <void index="1">
+       <string>Usuário</string>
+      </void>
+     </array>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>

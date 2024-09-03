@@ -1,15 +1,537 @@
-<html>
-<head>
-	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
-	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
-	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
-	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
-</head>
-<body>
-<div class="fluig-style-guide">
-<form name="form" role="form">
-</form>
-</div>
-</body>
-</html>
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Form</title>
+
+            <link rel="stylesheet" type="text/css" href="/style-guide/css/fluig-style-guide.min.css">
+            <script src="/resources/js/jquery/jquery.js"></script>
+            <script src="/resources/js/jquery/jquery-ui.min.js"></script>
+            <script src="/resources/js/mustache/mustache-min.js"></script>
+            <script src="/style-guide/js/fluig-style-guide.min.js"></script>
+
+            <!-- CUSTOM -->
+            <link href="/style-guide/css/fluig-style-guide-filter.min.css" rel="stylesheet" type="text/css">
+            <link href="/style-guide/css/fluig-style-guide-ratingstars.min.css" rel="stylesheet" type="text/css">
+            <script src="/style-guide/js/fluig-style-guide-filter.min.js"></script>
+            <script src="/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
+
+			<link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
+			<script type="text/javascript" src="/webdesk/vcXMLRPC.js"></script>
+			<script type="text/javascript" src="custom.js"></script>
+			
+		</head>
+        <body class="fluig-style-guide">
+        <form>
+			
+			
+<!-- Painel Demandante -->
+<header>
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div align="center" class="panel-title">
+					<h1 style="color: #FFF;"><i class="flaticon flaticon-multiple-register icon-lg" aria-hidden="true"></i>  Mapeamento de Processos</h1>
+				</div>	
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+				<input type="hidden" name="hd_nomeSolicitante" id="nomeSolicitante">
+				<input type="hidden" name="hd_numSuperior" id="numSuperior">
+				<input type="hidden" name="hdn_lastState" id="hdn_lastState">
+				<input type="hidden" name="hdn_State" id="hdn_State">
+				<input type="hidden" name="hdn_diretoria" id="hdn_diretoria">
+											
+	<div class="panel panel-default" id="painelDemandante">
+		<div class="panel-heading">
+			<h3 class="panel-title"style="color: #FFF;"><i class="flaticon flaticon-person icon-sm" aria-hidden="true"></i> Demandante</h3>
+		</div>
+		<div class="panel-body">
+			<div class="form-group row">										
+				<div class="col-md-3" id="NomeSolicita">
+					<label for="cmb_NomeSolicitante">Nome Solicitante</label>
+					<select name="cmb_NomeSolicitante" id="cmb_NomeSolicitante" dataset="colleague" datasetkey="colleagueId" datasetvalue="colleagueName" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-3" id="GerenteSolicita">
+					<label for="cmb_GerenteSolicitante">Gerente do Solicitante</label>
+					<input type="text" class="form-control" name="cmb_GerenteSolicitante" id="cmb_GerenteSolicitante" readonly>
+				</div>
+
+				<div class="col-md-3" id="UnidadeSolicita">
+					<label for="zm_UnidadeSolicitante">Unidade Solicitante</label>
+					<input type="text" class="form-control" name="cmb_UnidadeSolicitante" id="cmb_UnidadeSolicitante" readonly>
+				</div>
+				<div class="col-md-2">
+					<label for="dataSolic"><i class="fluigicon fluigicon-calendar icon-xs" aria-hidden="true"></i>
+						Data da solicitação</label>
+					<input type="text" id="dataSolic" name="dataSolic" class="form-control" readonly>
+				</div>
+				<div class="form-group col-md-1">
+					<label for="processo">Nº Processo:</label>							
+					<input type="text" name="processo" id="processo" class="form-control" readonly>
+				</div>
+			</div>																												    							    				    																																						
+		</div>
+	</div>	
+									
+	<!-- Painel Dados da Solicitação -->
+
+	<div class="panel panel-default" id="painelDadosDaSolicitacao">
+		<div class="panel-heading">
+			<h3 class="panel-title"style="color: #FFF;"><i class="flaticon flaticon-database icon-sm" aria-hidden="true"></i>
+				Dados da Solicitação</h3>
+		</div>
+		<div class="panel-body">
+			<div class="form-group row">
+				<div class="col-md-4">
+					<label for="escolhaPainel">A solicitação trata de:</label>
+					<span class="required text-danger">
+							<strong>*</strong>
+						</span>
+					<div>
+						<select name="escolhaPainel" id="escolhaPainel" class="form-control">
+							<option value="">Selecione</option>
+							<option id="novoProcesso" value="novoProcesso">Construção de Novo Processo</option>
+							<option id="existenteProcesso" value="existenteProcesso">Melhoria de Processo Existente</option>
+						</select>
+					</div>
+					<!-- Campo oculto para armazenar a escolha do usuário -->
+					<input type="hidden" name="escolhaField" id="escolhaField" value="">
+				</div>
+				<div class="col-md-3" id="conjAtv">
+					<label for="macroSelect">Vínculo com o conjunto de atividades do SEBRAE-AM:</label>
+					<span class="required text-danger">
+							<strong>*</strong>
+						</span>
+					<div>
+						<select name="macroSelect" id="macroSelect" class="form-control">
+							<option value="">Selecione</option>
+							<option value="macroGestao">Macroprocesso de Gestão</option>
+							<option value="macroApoio">Macroprocesso de Apoio</option>
+							<option value="macroNegocio">Macroprocesso de Negócio</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">													
+				<div class="form-group col-md-4">
+					<label for="condutor">Nomenclatura do Processo</label>
+						<span class="required text-danger">
+							<strong>*</strong>
+						</span>
+					<input type="text" name="nomenclatura" id="nomenclatura" class="form-control">
+				</div>
+				<div class="col-md-2">
+					<div class="switch switch-success">
+						<label>Possui Instrução Normativa?</label>
+							<input class="switch-input" name="nameIn"type="checkbox" id="checkIn" />
+						<label class="switch-button" for="checkIn">sim</label>
+					</div>
+				</div>
+			</div>	
+			<div class="form-group row" id="abc">
+				<div class="form-group col-md-4">
+					<label>Partes Interessadas</label>
+					<input type="zoom" name="usuario_coop" id="usuario_coop"
+						data-zoom="{
+							'displayKey':'Unidade',
+							'datasetId':'ds_UnidadesProcessos',
+							'maximumSelectionLength':'5',
+							'placeholder':'Escolha a unidade',
+
+							'fields':[
+								{
+								'field':'Unidade',
+								'label':'Unidade',
+								'standard':'true'
+								}
+							]
+						}"
+					/>
+				</div>
+				<div class="col-md-2">
+					<div class="switch switch-success">
+						<label>Possui Deliberação?</label>
+							<input class="switch-input" name="nameDeliberacao"type="checkbox" id="checkDeliberacao" />
+						<label class="switch-button" for="checkDeliberacao">sim</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-md-4">
+					<label for="dimensao">Dimensão</label>
+					<span class="required text-danger">
+						<strong>*</strong>
+					</span>
+					<input type="text" id="dimensao" name="dimensao" class="form-control">
+				</div>
+				<div class="col-md-4">
+					<div class="switch switch-success">
+						<label>Haverá dados sensivéis?</label> <i class="flaticon flaticon-question icon-sm" aria-hidden="true" 
+						data-toggle="tooltip" data-placement="right" data-original-title="Dados que envolvam a LGPD"></i>
+							<input class="switch-input" name="dadosSensiveis"type="checkbox" id="dadosSensiveis" />
+						<label class="switch-button" for="dadosSensiveis">sim</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">	
+				<div class="col-md-4">
+					<div class="form-group" id="justificativa">
+						<label for="justificativa">Justificativa:</label>
+						<span class="required text-danger">
+							<strong>*</strong>
+						</span>
+						<textarea class="form-control" id="justificativa" name="justificativa" rows="6" cols="20"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>	
+
+
+	<!-- Novo Processo -->
+
+	<div class="panel panel-default" id="painelNovoProcesso">
+		<div class="panel-heading">
+			<h3 class="panel-title"style="color: #FFF;"><i class="flaticon flaticon-create-new-folder icon-sm" aria-hidden="true"></i> Novo Processo</h3>
+		</div>
+		<div class="panel-body">
+			<div class="form-group row">										
+				<div class="form-group col-md-4">
+					<label for="donoProcesso">Dono do Processo:</label><i class="flaticon flaticon-question icon-sm" aria-hidden="true" 
+					data-toggle="tooltip" data-placement="right" data-original-title="Pessoa que inicia a execução do processo."></i>
+					<input type="zoom" name="donoProcesso" id="donoProcesso"
+						data-zoom="{
+							'displayKey':'colleagueName',
+							'datasetId':'colleague',
+							'maximumSelectionLength':'1',
+							'placeholder':'Escolha quem será o Dono do Processo',
+
+							'fields':[
+								{
+								'field':'colleagueName',
+								'label':'Nome',
+								'standard':'true'
+								}
+							]
+						}"
+					/>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="indicadoresDoProcesso">Indicador do Processo:</label><i class="flaticon flaticon-question icon-sm" aria-hidden="true" 
+						data-toggle="tooltip" data-placement="right" data-original-title="Forma para medir as demandas do processo."></i>
+						<textarea class="form-control" id="indicadoresDoProcesso" name="indicadoresDoProcesso" rows="4" cols="20"></textarea>
+					</div>
+				</div>
+			</div>	
+			<div class="form-group row">
+				<div class="col-md-4">
+					<div class="form-group" id="divObjProcesso">
+						<label for="objetivoDoProcesso">Objetivo do Processo: </label><i class="flaticon flaticon-question icon-sm" aria-hidden="true" 
+						data-toggle="tooltip" data-placement="right" data-original-title="Objetivo geral do processo."></i>
+						<textarea class="form-control" id="objDoProcesso" name="objDoProcesso" rows="7" cols="20"></textarea>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="requisitosLegais">Requisitos Legais:</label><i class="flaticon flaticon-question icon-sm" aria-hidden="true" 
+						data-toggle="tooltip" data-placement="right" data-original-title="IN/Políticas/Normas/Legislação."></i>
+						<textarea class="form-control" id="requisitosLegais" name="requisitosLegais" rows="4" cols="20"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<!-- Painel GAP  (Demandante)-->
+
+	<div class="panel panel-default" id="painelGap">
+		<div class="panel-heading">
+			<h3 class="panel-title"style="color: #FFF;"><i class="flaticon flaticon-create-new-folder icon-sm" aria-hidden="true"></i> GAP's</h3>
+		</div>
+		<div class="panel-body" id="divGaps">																									    							    				    																																						
+			<div class="form-group row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="problema">Problema</label>
+						<span class="required text-danger">
+							<strong>*</strong>
+						</span>
+						<textarea class="form-control" id="problema" name="problema" rows="6" cols="15"></textarea>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="sintomaDescricao">Sintoma/Descrição</label>
+						<span class="required text-danger">
+							<strong>*</strong>
+						</span>
+						<textarea class="form-control" id="sintomaDescricao" name="sintomaDescricao" rows="6" cols="15"></textarea>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<label>Peso do Objetivo</label>
+					<select name="pesoObj" id="pesoObj" class="form-control">
+						<option value="0">Selecione</option>
+						<option value="1">Pode ter</option>
+						<option value="2">Deve ter</option>
+						<option value="3">Tem que ter</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="principaisConsequencias">Principais Consequências</label>
+						<span class="required text-danger">
+							<strong>*</strong>
+						</span>
+						<textarea class="form-control" id="principaisConsequencias" name="principaisConsequencias" rows="6" cols="15"></textarea>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="objetivoEstrategico">Objetivo Estratégico</label>
+						<span class="required text-danger">
+							<strong>*</strong>
+						</span>
+						<textarea class="form-control" id="objetivoEstrategico" name="objetivoEstrategico" rows="6" cols="15"></textarea>
+					</div>
+				</div>
+				<div class="col-md-4" id="divImpacto">
+					<label>Impacto</label>
+					<select name="impacto" id="impacto" class="form-control" onchange="trocaCor()">
+						<option value="0" data-color="white">Selecione</option>
+						<option value="1" data-color="#B0FFAB">Aceitável</option>
+						<option value="2" data-color="#FFF67D">Moderado</option>
+						<option value="3" data-color="#FFA500">Substancial</option>
+						<option value="4" data-color="#EC6464">Crítico</option>
+					</select>
+				</div>
+			</div>
+		<!-- 	<div class="form-group row">
+				
+			</div>																												    							    				    																																						
+			<div class="form-group row">
+				
+			</div> -->	
+			<div class="form-group row" id="divRating">
+				<div class="col-md-1">
+					<button id="btnCalculaRating" onclick="calculaRating()">Calcular RATING</button>
+				</div>
+				<div class="col-md-3">
+					<label for="pontuacao">Pontuação RATING</label>
+					<input type="text" name="rating" id="rating" class="form-control" readonly>
+				</div>
+			</div>																										    							    				    																																						
+				
+		</div>
+	</div>	
+
+	<!-- Painel NTIC (Novo Processo) -->
+
+	<div class="panel panel-default" id="painelNtic">
+		<div class="panel-heading">
+			<h3 class="panel-title"style="color: #FFF;"><i class="flaticon flaticon-create-new-folder icon-sm" aria-hidden="true"></i> Processos NTIC</h3>
+		</div>
+		<div class="panel-body">																												    							    				    																																						
+			<div class="form-group row" id="divDataAgendamento">
+				<div class="col-md-3" id="divDataAgendamento">
+					<label>Data do Agendamento do Mapeamento</label>
+					<input type="datetime-local" name="dataAgendamento" id="dataAgendamento" class="form-control">
+				</div>	
+				<div class="col-md-3" id="divDataFinalizacao">
+					<label>Data da Finalização do Fluxo</label>
+					<span class="required text-danger">
+						<strong>*</strong>
+					</span>
+					<input type="datetime-local" name="dataFinalizacaoFluxo" id="dataFinalizacaoFluxo" class="form-control">
+				</div>
+			</div>
+			<div class="form-group row" id="divTextValidacao">	
+				<div class="col-md-3">
+					<div class="form-group" id="divTextValidacao">
+						<label for="textValidacaoProcesso">Informações sobre a Validação ou Ajustes do Mapeamento:</label>
+						<textarea class="form-control" id="textValidacaoProcesso" name="textValidacaoProcesso" rows="6" cols="15" placeholder="Quaisquer observações, ajustes ou alertas (opcional)"></textarea>
+					</div>
+				</div>
+				<div class="col-md-3"  id="divTextFinalizacao">
+					<div class="form-group" id="textFinalizacaoProcesso">
+						<label for="textFinalizacaoProcesso">Informações sobre a Finalização do Fluxo:</label>
+						<textarea class="form-control" id="textFinalizacaoProcesso" name="textFinalizacaoProcesso" rows="6" cols="15" placeholder="Quaisquer observações, ajustes ou alertas (opcional)"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">										
+				<div class="col-md-3" id="divEquipeDev">
+					<label for="selectNtic">Necessitará da Equipe de Desenvolvimento?</label>
+					<span class="required text-danger">
+							<strong>*</strong>
+					</span>
+					<div>
+						<select name="selectNtic" id="selectNtic" class="form-control">
+							<option value="">Selecione</option>
+							<option value="sim">Sim</option>
+							<option value="nao">Não</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+
+	<!-- Painel RAB (Desenvolvimento) -->
+
+	<div class="panel panel-default" id="painelRab">
+		<div class="panel-heading">
+			<h3 class="panel-title"style="color: #FFF;"><i class="flaticon flaticon-create-new-folder icon-sm" aria-hidden="true"></i> RAB</h3>
+		</div>
+		<div class="panel-body">
+			<div class="form-group row">
+				<div class="col-md-4">
+					<label>Em quanto tempo estimamos que NTIC conseguiria?</label>
+					<select name="rapidez" id="rapidez" class="form-control">
+						<option value="0">Selecione</option>
+						<option value="1">Acima de 6 meses</option>
+						<option value="2">Entre 2 e 6 meses</option>
+						<option value="3">Até 2 meses</option>
+					</select>
+				</div>
+			</div>																												    							    				    																																						
+			<div class="form-group row">
+				<div class="col-md-4">
+					<label>A NTIC poderia resolver sozinha ou precisa de apoio?</label>
+					<select name="autonomia" id="autonomia" class="form-control">
+						<option value="0">Selecione</option>
+						<option value="1">Depende de mais de uma área de negóico, T.I, fornecedores e/ou parceiros</option>
+						<option value="2">Depende de uma área de negócio com a T.I</option>
+						<option value="3">Só depende da T.I</option>
+					</select>
+				</div>
+			</div>																												    							    				    																																						
+			<div class="form-group row">
+				<div class="col-md-4">
+					<label>Solucionar o problema tará beneficios para quem?</label>
+					<select name="beneficio" id="beneficio" class="form-control">
+						<option value="0">Selecione</option>
+						<option value="1">Baixo(Não impacta objetivos estratégicos)</option>
+						<option value="2">Médio(Impacta 50% dos objetivos estratégicos)</option>
+						<option value="3">Alto(Impacta 100% dos objetivos estratégicos)</option>
+					</select>
+				</div>
+			</div>	
+			<div class="form-group row" id="divRab">
+				<div class="col-md-1">
+					<button id="btnCalcula" onclick="calculaRab()">Calcular RAB</button>
+				</div>
+				<div class="col-md-3">
+					<label for="pontuacao">Pontuação RAB</label>
+					<input type="text" name="pontuacao" id="pontuacao" class="form-control" readonly>
+				</div>
+			</div>
+			<!-- <div class="row" id="divPontuacaoTotal">
+				<div class="col-md-3">
+					<label for="pontuacaoTotal">Pontuação Total (GAP + RAB)</label>
+					<input type="text" name="pontuacaoTotal" id="pontuacaoTotal"  class="form-control" readonly>
+				</div>
+			</div> -->
+		</div>
+	</div>	
+
+</main>
+		<!-- Rodapé -->
+		<footer>
+			<div class="form-group">
+				<div class="row" style="--bs-gutter-x:0">
+					<div class="col-md-10" style="text-align:left;background-color:  #0070ba;">
+						<img src="LOGO_NTIC.png" title="Logo do ATIC REAL OFFICIAL" width="80" height="37">
+					</div>
+					<div class="col-md-2" style="text-align:right;background-color:  #0070ba;">
+						<img src="sebrae-branco.png" title="Logo do SEBRAE" width="80" height="37">
+					</div>
+				</div>
+			</div>
+		</footer>
+
+<!--Fim-->	
+
+<style>
+	#btnCalcula{
+		padding: 10px;
+		margin-top: 15px;
+	}
+	#btnCalculaRating{
+		padding: 10px;
+		margin-top: 15px;
+	}
+	#divImpacto {
+		margin-top: -120px;
+	}
+	#divRating {
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		top: -230px;
+	}
+	#divGaps {
+		margin-bottom: -80px;
+	}
+	#divObjProcesso{
+		margin-top: -60px;
+	}
+
+</style>
+
+<script>
+				String.prototype.isEmpty = function () {
+					return (!this || 0 === this.length);
+				};
+				var beforeSendValidate = function (numState, nextState) {
+					var erromsg = ''
+					//console.log(numState)	
+					if(numState == 0 || numState == 4 || numState == 5 || numState == 8){
+						erromsg += verificaAnexo();
+					}
+					if (erromsg.trim().isEmpty() == false) { throw "\n" + erromsg; }
+				}
+				function verificaAnexo() {
+					//console.log("entrei")
+					var tableAnx = window.parentOBJ.document.getElementById("attachmentsTable").children[0].tBodies[0];
+					var anexo = tableAnx.children[0].attributes
+					var msg = ''
+					var namein = document.getElementById("checkIn").checked;
+					var namedeli = document.getElementById("checkDeliberacao").checked;   
+					//console.log(namedeli)
+					//console.log(namein)
+						
+					if (anexo.length != 0  && (namein || namedeli)) 
+					{ console.log('tem anexo'); msg = '<b>Atenção</b> É necessário anexar a Instrução Normativa ou a Deliberação'}
+					return msg
+				}
+
+</script>
+
+		</form>
+		</body>
+		<style>
+			.panel-heading {
+				background: linear-gradient(to right, #0070ba, #0070ba);
+				}
+			</style>
+		<script>
+
+			var calendarioDataSolic = FLUIGC.calendar('#dataSolic', {
+				pickDate: false,
+				useCurrent: true,
+			});
+			
+
+
+		</script>
+	</html>
