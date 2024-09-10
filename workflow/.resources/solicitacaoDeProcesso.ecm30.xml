@@ -28,7 +28,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>solicitacaoDeProcesso</processId>
-      <version>5</version>
+      <version>6</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>551600</formId>
@@ -995,7 +995,7 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>5</version>
+        <version>6</version>
         <sequence>9</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1007,7 +1007,7 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>5</version>
+        <version>6</version>
         <sequence>9</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1019,7 +1019,7 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>5</version>
+        <version>6</version>
         <sequence>14</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1031,7 +1031,7 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>5</version>
+        <version>6</version>
         <sequence>14</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1043,7 +1043,7 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>5</version>
+        <version>6</version>
         <sequence>23</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1055,7 +1055,7 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>5</version>
+        <version>6</version>
         <sequence>23</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -1525,7 +1525,48 @@
     </ProcessLink>
   </list>
   <list/>
-  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeSendData</eventId>
+        <processId>solicitacaoDeProcesso</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeSendData(customField,customFact){
+    customField[0] = hAPI.getCardValue(&quot;escolhaPainel&quot;);
+    customField[1] = hAPI.getCardValue(&quot;nomenclatura&quot;);
+    customField[2] = hAPI.getCardValue(&quot;processo&quot;);
+    
+    customField[3] = hAPI.getCardValue(&quot;pesoObj&quot;);
+    customField[4] = hAPI.getCardValue(&quot;impacto&quot;);
+    customField[5] = hAPI.getCardValue(&quot;rating&quot;);
+    customField[6] = hAPI.getCardValue(&quot;rapidez&quot;);
+    customField[7] = hAPI.getCardValue(&quot;autonomia&quot;);
+    customField[8] = hAPI.getCardValue(&quot;beneficio&quot;);
+    customField[9] = hAPI.getCardValue(&quot;pontuacao&quot;);
+
+    customField[10] = hAPI.getCardValue(&quot;dataAgendamento&quot;);
+    customField[11] = hAPI.getCardValue(&quot;dataFinalizacaoFluxo&quot;);
+    customField[12] = hAPI.getCardValue(&quot;selectNtic&quot;);
+    customField[13] = hAPI.getCardValue(&quot;macroSelect&quot;);
+    customField[14] = hAPI.getCardValue(&quot;dimensao&quot;);
+    customField[15] = hAPI.getCardValue(&quot;donoProcesso&quot;);
+
+    customField[16] = hAPI.getCardValue(&quot;indicadoresDoProcesso&quot;);
+    customField[17] = hAPI.getCardValue(&quot;objDoProcesso&quot;);
+    customField[18] = hAPI.getCardValue(&quot;requisitosLegais&quot;);
+    customField[19] = hAPI.getCardValue(&quot;problema&quot;);
+    customField[20] = hAPI.getCardValue(&quot;sintomaDescricao&quot;);
+    customField[21] = hAPI.getCardValue(&quot;principaisConsequencias&quot;);
+    customField[22] = hAPI.getCardValue(&quot;objetivoEstrategico&quot;);
+    customField[23] = hAPI.getCardValue(&quot;textValidacaoProcesso&quot;);
+    customField[24] = hAPI.getCardValue(&quot;textFinalizacaoProcesso&quot;);
+    customField[25] = hAPI.getCardValue(&quot;usuario_coop&quot;);
+}
+</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
   <list/>
   <list>
     <SwimLane>
@@ -1600,7 +1641,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>32</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1611,7 +1652,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>32</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1622,7 +1663,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>34</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1633,7 +1674,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>34</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1644,7 +1685,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>51</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1655,7 +1696,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>51</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1666,7 +1707,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>54</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1677,7 +1718,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>54</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1688,7 +1729,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>55</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1699,7 +1740,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>5</version>
+        <version>6</version>
         <linkSequence>55</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1718,7 +1759,7 @@
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>solicitacaoDeProcesso</processId>
-      <processVersion>5</processVersion>
+      <processVersion>6</processVersion>
       <stateSequence>20</stateSequence>
       <operator>2</operator>
       <amount>0</amount>
@@ -1729,7 +1770,7 @@
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>solicitacaoDeProcesso</processId>
-      <processVersion>5</processVersion>
+      <processVersion>6</processVersion>
       <stateSequence>22</stateSequence>
       <operator>2</operator>
       <amount>0</amount>

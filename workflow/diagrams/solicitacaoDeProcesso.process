@@ -4542,7 +4542,7 @@
     <fonts name="Arial" size="8"/>
     <fonts bold="true" name="Arial" size="8"/>
   </pi:Diagram>
-  <bpmn2:BpmnProcess author="" cardIndex="551600" category="" complementsLevel="1" expedient="Default" extendedFields="&lt;list/&gt;" formSource="server" id="solicitacaoDeProcesso" instruction="" keyWord="" name="solicitacaoDeProcesso" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" publicProcess="true" serverId="producao" version="5" volume="Default"/>
+  <bpmn2:BpmnProcess author="" cardIndex="551600" category="" complementsLevel="1" expedient="Default" extendedFields="&lt;list/&gt;" formSource="server" id="solicitacaoDeProcesso" instruction="" keyWord="" name="solicitacaoDeProcesso" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" publicProcess="true" serverId="producao" version="6" volume="Default"/>
   <bpmn2:BpmnPool cores="FFFFFF" id="pool1" name="Solicita&#231;&#227;o de Processo"/>
   <bpmn2:BpmnSwimLane cores="9DCEFF" id="swimlane2" name="Demandante"/>
   <bpmn2:BpmnSwimLane cores="BAC7F8" id="swimlane3" name="Diretoria Respons&#225;vel"/>
