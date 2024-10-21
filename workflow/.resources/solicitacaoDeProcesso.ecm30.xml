@@ -9,7 +9,7 @@
     <active>true</active>
     <publicProcess>true</publicProcess>
     <volumeId>Default</volumeId>
-    <categoryId></categoryId>
+    <categoryId>UTIC</categoryId>
     <managerEngineAllocationId></managerEngineAllocationId>
     <snapshotFrequency>0</snapshotFrequency>
     <baseDay>0</baseDay>
@@ -28,7 +28,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>solicitacaoDeProcesso</processId>
-      <version>7</version>
+      <version>8</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>551600</formId>
@@ -995,10 +995,10 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>7</version>
+        <version>8</version>
         <sequence>9</sequence>
       </conditionProcessStatePK>
-      <condition></condition>
+      <condition>false</condition>
       <destinationSequenceId>13</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
@@ -1007,10 +1007,10 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>7</version>
+        <version>8</version>
         <sequence>9</sequence>
       </conditionProcessStatePK>
-      <condition></condition>
+      <condition>false</condition>
       <destinationSequenceId>13</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
@@ -1019,10 +1019,10 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>7</version>
+        <version>8</version>
         <sequence>14</sequence>
       </conditionProcessStatePK>
-      <condition></condition>
+      <condition>false</condition>
       <destinationSequenceId>15</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
@@ -1031,10 +1031,10 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>7</version>
+        <version>8</version>
         <sequence>14</sequence>
       </conditionProcessStatePK>
-      <condition></condition>
+      <condition>false</condition>
       <destinationSequenceId>16</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
@@ -1043,10 +1043,10 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>1</expressionOrder>
-        <version>7</version>
+        <version>8</version>
         <sequence>23</sequence>
       </conditionProcessStatePK>
-      <condition></condition>
+      <condition>false</condition>
       <destinationSequenceId>24</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
@@ -1055,10 +1055,10 @@
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
         <expressionOrder>2</expressionOrder>
-        <version>7</version>
+        <version>8</version>
         <sequence>23</sequence>
       </conditionProcessStatePK>
-      <condition></condition>
+      <condition>false</condition>
       <destinationSequenceId>25</destinationSequenceId>
       <conditionType>1</conditionType>
     </ConditionProcessState>
@@ -1641,7 +1641,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>32</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1652,7 +1652,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>32</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1663,7 +1663,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>34</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1674,7 +1674,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>34</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1685,7 +1685,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>51</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1696,7 +1696,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>51</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1707,7 +1707,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>54</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1718,7 +1718,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>54</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1729,7 +1729,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>55</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1740,7 +1740,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacaoDeProcesso</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>55</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -1759,7 +1759,7 @@
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>solicitacaoDeProcesso</processId>
-      <processVersion>7</processVersion>
+      <processVersion>8</processVersion>
       <stateSequence>20</stateSequence>
       <operator>2</operator>
       <amount>0</amount>
@@ -1770,7 +1770,7 @@
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>solicitacaoDeProcesso</processId>
-      <processVersion>7</processVersion>
+      <processVersion>8</processVersion>
       <stateSequence>22</stateSequence>
       <operator>2</operator>
       <amount>0</amount>
